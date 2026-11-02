@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MyTube</title>
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="apple-touch-icon" href="/favicon.png" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-left">
+      <button class="icon-btn" id="menuToggle" title="Menu" aria-label="Menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+      <a class="brand" href="#/">
+        <span class="brand-icon">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M8 4.5 19 12 8 19.5z"/></svg>
+        </span>
+        <span class="brand-name">MyTube</span>
+      </a>
+    </div>
+    <div class="topbar-center">
+      <form class="search-form" id="searchForm">
+        <input id="searchInput" type="text" placeholder="Search" autocomplete="off" />
+        <button type="submit" class="search-btn" title="Search" aria-label="Search">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M16.5 16.5 21 21"/></svg>
+        </button>
+      </form>
+    </div>
+    <div class="topbar-right" id="topbarRight"></div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main class="content" id="app"></main>
+  </div>
+
+  <div class="modal-backdrop hidden" id="uploadModal">
+    <div class="modal">
+      <div class="modal-header">
+        <h2>Upload video</h2>
+        <button class="icon-btn" id="closeUpload" title="Close" aria-label="Close">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>
+        </button>
+      </div>
+      <form id="uploadForm">
+        <label class="file-drop" id="fileDrop">
+          <input type="file" id="videoFile" accept="video/*" hidden />
+          <span id="fileLabel">Select a video file</span>
+        </label>
+        <input type="text" id="upTitle" placeholder="Title" required />
+        <textarea id="upDesc" placeholder="Description" rows="3"></textarea>
+        <input type="text" id="upThumb" placeholder="Thumbnail URL (optional)" />
+        <select id="upCategory">
+          <option value="Other">Choose a category</option>
+          <option>Animation</option>
+          <option>Education</option>
+          <option>Entertainment</option>
+          <option>Gaming</option>
+          <option>Music</option>
+          <option>News</option>
+          <option>Sports</option>
+          <option>Tech</option>
+          <option>Travel</option>
+        </select>
+        <input type="text" id="upTags" placeholder="Tags (comma separated)" />
+        <div class="upload-note hidden" id="uploadNote">Uploads require administrator approval before they appear publicly.</div>
+        <div class="progress hidden" id="uploadProgress"><div class="progress-bar" id="progressBar"></div></div>
+        <div class="modal-actions">
+          <button type="button" class="btn ghost" id="cancelUpload">Cancel</button>
+          <button type="submit" class="btn primary" id="submitUpload">Upload</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="toast hidden" id="toast"></div>
+
+  <script src="/icons.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>

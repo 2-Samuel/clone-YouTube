@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Studio — MyTube Admin</title>
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="apple-touch-icon" href="/favicon.png" />
+  <link rel="stylesheet" href="/admin/admin.css" />
+</head>
+<body>
+  <!-- login gate -->
+  <div class="login-screen" id="loginView">
+    <div class="login-card">
+      <div class="login-brand">
+        <span class="brand-mark">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M8 4.5 19 12 8 19.5z"/></svg>
+        </span>
+        <span>MyTube <b>Studio</b></span>
+      </div>
+      <h1>Administrator sign in</h1>
+      <p class="muted">Use an account with administrator access.</p>
+      <div class="login-error" id="loginError"></div>
+      <form id="loginForm">
+        <label>Username or email
+          <input type="text" id="loginName" autocomplete="username" required />
+        </label>
+        <label>Password
+          <input type="password" id="loginPass" autocomplete="current-password" required />
+        </label>
+        <button class="btn primary block" type="submit" id="loginSubmit">Sign in to Studio</button>
+      </form>
+      <a class="back-link" href="/">Back to MyTube</a>
+    </div>
+  </div>
+
+  <!-- admin shell -->
+  <div class="admin-shell hidden" id="adminView">
+    <aside class="sidebar" id="sidebar">
+      <a class="sidebar-brand" href="#/dashboard">
+        <span class="brand-mark">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M8 4.5 19 12 8 19.5z"/></svg>
+        </span>
+        <span>MyTube</span>
+        <em>Studio</em>
+      </a>
+      <nav class="nav" id="nav"></nav>
+      <div class="sidebar-footer">
+        <div class="mini-user">
+          <div class="avatar" id="sidebarAvatar">A</div>
+          <div class="mini-user-text">
+            <b id="sidebarName">Administrator</b>
+            <span id="sidebarRole">Admin</span>
+          </div>
+        </div>
+        <button class="icon-btn" id="logoutBtn" title="Sign out" aria-label="Sign out"></button>
+      </div>
+    </aside>
+    <div class="overlay hidden" id="overlay"></div>
+
+    <div class="main">
+      <header class="topbar">
+        <button class="icon-btn menu-btn" id="menuBtn" title="Menu" aria-label="Menu"></button>
+        <div class="topbar-title">
+          <span class="muted">Studio</span>
+          <b id="topbarPage">Dashboard</b>
+        </div>
+        <div class="topbar-actions">
+          <a class="btn ghost sm" href="/" target="_blank" rel="noopener" id="viewSiteBtn">View site</a>
+          <span class="avatar" id="topbarAvatar" title="Administrator">A</span>
+        </div>
+      </header>
+      <main class="page" id="page"></main>
+    </div>
+  </div>
+
+  <div id="modalRoot"></div>
+  <div class="toast hidden" id="toast"></div>
+
+  <script src="/icons.js"></script>
+  <script src="/admin/admin.js"></script>
+</body>
+</html>

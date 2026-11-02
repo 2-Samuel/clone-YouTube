@@ -1,0 +1,477 @@
+{
+  "users": [
+    {
+      "_id": "u-nature",
+      "name": "Nature Films",
+      "email": "nature@example.com",
+      "password": "$2b$10$esA7L4B9Yq1/vZK9pSaEkOMfZEXdFGnR9uzfMKmSEWjq/8BvtCCEe",
+      "img": "",
+      "subscribers": [
+        "7f8789da-704c-4d72-a905-9cadecf69ca0"
+      ],
+      "subscribedChannels": [],
+      "createdAt": "2026-04-11T19:25:02.296Z",
+      "role": "user",
+      "status": "active"
+    },
+    {
+      "_id": "u-tech",
+      "name": "TechBytes",
+      "email": "tech@example.com",
+      "password": "$2b$10$SPDBljED6ed9S8PJGOgLCuHTryXNaPSTvwx1xjfIRnM6cwGslm5kS",
+      "img": "",
+      "subscribers": [
+        "7f8789da-704c-4d72-a905-9cadecf69ca0"
+      ],
+      "subscribedChannels": [],
+      "createdAt": "2026-04-21T19:25:02.296Z",
+      "role": "user",
+      "status": "active"
+    },
+    {
+      "_id": "u-music",
+      "name": "Music Vibes",
+      "email": "music@example.com",
+      "password": "$2b$10$cG3knW4mKI2daaW7PB978u.LDmjv1JRERgLcqbS2Xom2chow3J6dy",
+      "img": "",
+      "subscribers": [],
+      "subscribedChannels": [],
+      "createdAt": "2026-05-01T19:25:02.296Z",
+      "role": "user",
+      "status": "active"
+    },
+    {
+      "_id": "u-game",
+      "name": "GameZone",
+      "email": "game@example.com",
+      "password": "$2b$10$Vwl7Ke/lBGfnDDTXe//syO5Dn8hy1au8Y0e3zj1/UtU2V47CMlmZu",
+      "img": "",
+      "subscribers": [],
+      "subscribedChannels": [],
+      "createdAt": "2026-05-11T19:25:02.296Z",
+      "role": "user",
+      "status": "active"
+    },
+    {
+      "_id": "u-code",
+      "name": "CodeDaily",
+      "email": "code@example.com",
+      "password": "$2b$10$C7hrQPECaZ.9mXJWfauHcOuuXKd43GcY2xkkqerqfUxe.QYeK/O3C",
+      "img": "",
+      "subscribers": [],
+      "subscribedChannels": [],
+      "createdAt": "2026-05-21T19:25:02.296Z",
+      "role": "user",
+      "status": "active"
+    },
+    {
+      "_id": "7f8789da-704c-4d72-a905-9cadecf69ca0",
+      "name": "sam",
+      "email": "samz002540@gmail.com",
+      "password": "$2b$10$1UQ6YJpITcHWJCvTgLjhAub84i/J.LwYs136m0pycMX02bbT2NSdm",
+      "img": "",
+      "subscribers": [],
+      "subscribedChannels": [
+        "u-tech",
+        "u-nature"
+      ],
+      "createdAt": "2026-10-28T19:33:31.380Z",
+      "role": "user",
+      "status": "active"
+    },
+    {
+      "_id": "6efff575-0318-4a3e-a4ab-dca222fb3fe3",
+      "name": "samuel",
+      "email": "samuelnjoroge01000@gmail.com",
+      "password": "$2b$10$rGue4tTp8FnmH0HduQoQkei0Pi/Fwfo0GFurdRlEGOGKWbf.osnmW",
+      "img": "",
+      "role": "admin",
+      "status": "active",
+      "subscribers": [],
+      "subscribedChannels": [],
+      "createdAt": "2026-10-29T10:22:44.812Z"
+    }
+  ],
+  "videos": [
+    {
+      "_id": "v1",
+      "userId": "u-nature",
+      "title": "Big Buck Bunny — Full Animated Short",
+      "description": "A large rabbit takes revenge on three bullying rodents in this classic open movie.",
+      "videoUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      "imgUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/BigBuckBunny.jpg",
+      "views": 152343,
+      "likes": [],
+      "dislikes": [],
+      "tags": [
+        "animation",
+        "short film",
+        "nature"
+      ],
+      "createdAt": "2026-10-16T19:25:02.296Z",
+      "status": "published",
+      "visibility": "public",
+      "category": "Other",
+      "featured": false,
+      "publishedAt": "2026-10-16T19:25:02.296Z",
+      "processingStatus": "ready"
+    },
+    {
+      "_id": "v2",
+      "userId": "u-tech",
+      "title": "Elephants Dream — Open Movie",
+      "description": "Two characters explore a strange mechanical world. A landmark open-source film.",
+      "videoUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+      "imgUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/ElephantsDream.jpg",
+      "views": 98210,
+      "likes": [],
+      "dislikes": [],
+      "tags": [
+        "animation",
+        "sci-fi"
+      ],
+      "createdAt": "2026-10-08T19:25:02.296Z",
+      "status": "published",
+      "visibility": "public",
+      "category": "Other",
+      "featured": false,
+      "publishedAt": "2026-10-08T19:25:02.296Z",
+      "processingStatus": "ready"
+    },
+    {
+      "_id": "v3",
+      "userId": "u-music",
+      "title": "For Bigger Blazes — Cinematic Demo",
+      "description": "Short cinematic demo clip with rich visuals and sound.",
+      "videoUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+      "imgUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerBlazes.jpg",
+      "views": 54210,
+      "likes": [],
+      "dislikes": [],
+      "tags": [
+        "music",
+        "demo"
+      ],
+      "createdAt": "2026-10-24T19:25:02.296Z",
+      "status": "published",
+      "visibility": "public",
+      "category": "Other",
+      "featured": false,
+      "publishedAt": "2026-10-24T19:25:02.296Z",
+      "processingStatus": "ready"
+    },
+    {
+      "_id": "v4",
+      "userId": "u-game",
+      "title": "For Bigger Escapes — Action Demo",
+      "description": "High-energy action demo footage.",
+      "videoUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+      "imgUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerEscapes.jpg",
+      "views": 33210,
+      "likes": [],
+      "dislikes": [],
+      "tags": [
+        "action",
+        "gaming"
+      ],
+      "createdAt": "2026-10-20T19:25:02.296Z",
+      "status": "published",
+      "visibility": "public",
+      "category": "Other",
+      "featured": false,
+      "publishedAt": "2026-10-20T19:25:02.296Z",
+      "processingStatus": "ready"
+    },
+    {
+      "_id": "v5",
+      "userId": "u-code",
+      "title": "For Bigger Fun — Tech Demo",
+      "description": "A playful demo scene used for streaming tests.",
+      "videoUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4",
+      "imgUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerFun.jpg",
+      "views": 22110,
+      "likes": [],
+      "dislikes": [],
+      "tags": [
+        "tech",
+        "demo"
+      ],
+      "createdAt": "2026-10-26T19:25:02.296Z",
+      "status": "published",
+      "visibility": "public",
+      "category": "Other",
+      "featured": false,
+      "publishedAt": "2026-10-26T19:25:02.296Z",
+      "processingStatus": "ready"
+    },
+    {
+      "_id": "v6",
+      "userId": "u-nature",
+      "title": "Sintel — Fantasy Short Film",
+      "description": "A lone girl searches for her lost dragon companion.",
+      "videoUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
+      "imgUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/Sintel.jpg",
+      "views": 210900,
+      "likes": [],
+      "dislikes": [],
+      "tags": [
+        "fantasy",
+        "animation"
+      ],
+      "createdAt": "2026-09-13T19:25:02.296Z",
+      "status": "published",
+      "visibility": "public",
+      "category": "Other",
+      "featured": false,
+      "publishedAt": "2026-09-13T19:25:02.296Z",
+      "processingStatus": "ready"
+    },
+    {
+      "_id": "v7",
+      "userId": "u-tech",
+      "title": "For Bigger Joyrides — Driving Demo",
+      "description": "Smooth driving footage for adaptive streaming demos.",
+      "videoUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
+      "imgUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerJoyrides.jpg",
+      "views": 77210,
+      "likes": [],
+      "dislikes": [],
+      "tags": [
+        "cars",
+        "demo"
+      ],
+      "createdAt": "2026-10-22T19:25:02.296Z",
+      "status": "published",
+      "visibility": "public",
+      "category": "Other",
+      "featured": false,
+      "publishedAt": "2026-10-22T19:25:02.296Z",
+      "processingStatus": "ready"
+    },
+    {
+      "_id": "v8",
+      "userId": "u-music",
+      "title": "For Bigger Meltdowns — Drama Demo",
+      "description": "Dramatic short demo clip.",
+      "videoUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4",
+      "imgUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerMeltdowns.jpg",
+      "views": 41210,
+      "likes": [],
+      "dislikes": [],
+      "tags": [
+        "drama"
+      ],
+      "createdAt": "2026-10-13T19:25:02.296Z",
+      "status": "published",
+      "visibility": "public",
+      "category": "Other",
+      "featured": false,
+      "publishedAt": "2026-10-13T19:25:02.296Z",
+      "processingStatus": "ready"
+    },
+    {
+      "_id": "v9",
+      "userId": "u-game",
+      "title": "Tears of Steel — Sci-Fi Short",
+      "description": "A group of warriors and scientists gather in Amsterdam to save the world.",
+      "videoUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
+      "imgUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/TearsOfSteel.jpg",
+      "views": 183400,
+      "likes": [],
+      "dislikes": [],
+      "tags": [
+        "sci-fi",
+        "animation"
+      ],
+      "createdAt": "2026-08-29T19:25:02.296Z",
+      "status": "published",
+      "visibility": "public",
+      "category": "Other",
+      "featured": false,
+      "publishedAt": "2026-08-29T19:25:02.296Z",
+      "processingStatus": "ready"
+    },
+    {
+      "_id": "v10",
+      "userId": "u-code",
+      "title": "We Are Going On Bullrun — Road Trip",
+      "description": "Road trip demo footage.",
+      "videoUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4",
+      "imgUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/images/WeAreGoingOnBullrun.jpg",
+      "views": 12800,
+      "likes": [],
+      "dislikes": [],
+      "tags": [
+        "travel"
+      ],
+      "createdAt": "2026-10-25T19:25:02.296Z",
+      "status": "published",
+      "visibility": "public",
+      "category": "Other",
+      "featured": false,
+      "publishedAt": "2026-10-25T19:25:02.296Z",
+      "processingStatus": "ready"
+    },
+    {
+      "_id": "1c4faa17-ddcb-4fa5-8354-22344e505ccb",
+      "userId": "u-tech",
+      "title": "video",
+      "description": "pint",
+      "videoUrl": "/uploads/bdd33e25-daa2-4499-bc1e-2cca2ec72a36.mp4",
+      "imgUrl": "",
+      "views": 2,
+      "likes": [
+        "u-tech"
+      ],
+      "dislikes": [],
+      "tags": [
+        "",
+        "",
+        ""
+      ],
+      "createdAt": "2026-10-28T19:31:25.344Z",
+      "status": "published",
+      "visibility": "public",
+      "category": "Other",
+      "featured": false,
+      "publishedAt": "2026-10-28T19:31:25.344Z",
+      "processingStatus": "ready"
+    },
+    {
+      "_id": "121f84d8-e902-4e0b-a259-3d9e40445b23",
+      "userId": "6efff575-0318-4a3e-a4ab-dca222fb3fe3",
+      "title": "spiderman",
+      "description": "spiderman",
+      "videoUrl": "/uploads/ce2bf31c-691d-43a6-a2a8-7da552c88849.mp4",
+      "imgUrl": "/uploads/18dd7793-122a-4afd-aa79-d0c009feafbc.png",
+      "views": 2,
+      "likes": [
+        "6efff575-0318-4a3e-a4ab-dca222fb3fe3"
+      ],
+      "dislikes": [],
+      "tags": [],
+      "category": "Entertainment",
+      "status": "published",
+      "visibility": "public",
+      "featured": true,
+      "scheduledAt": "2026-02-21T21:00:00.000Z",
+      "publishedAt": "2026-02-21T21:00:00.000Z",
+      "createdAt": "2026-10-29T10:31:37.081Z",
+      "processingStatus": "ready",
+      "fileSize": 103718879
+    },
+    {
+      "_id": "1ab2fed6-d6fe-496d-a132-a23ff97d5f39",
+      "userId": "6efff575-0318-4a3e-a4ab-dca222fb3fe3",
+      "title": "will be okay",
+      "description": "song",
+      "videoUrl": "/uploads/c450d242-172f-4096-af23-13d2c34fbb77.mp4",
+      "imgUrl": "/uploads/ef3b25e2-25c3-4a7c-9da0-4d2d6d1d4420.jpg",
+      "views": 1,
+      "likes": [
+        "6efff575-0318-4a3e-a4ab-dca222fb3fe3"
+      ],
+      "dislikes": [],
+      "tags": [
+        ".bien"
+      ],
+      "category": "Music",
+      "status": "published",
+      "visibility": "public",
+      "featured": false,
+      "scheduledAt": "2026-11-02T14:53:00.000Z",
+      "publishedAt": "2026-11-02T14:53:00.000Z",
+      "createdAt": "2026-11-02T14:54:06.719Z",
+      "processingStatus": "ready",
+      "fileSize": 49227343
+    }
+  ],
+  "comments": [
+    {
+      "_id": "c1",
+      "userId": "u-tech",
+      "videoId": "v1",
+      "desc": "This is still one of my favorite shorts. The animation holds up!",
+      "createdAt": "2026-10-26T19:25:02.296Z"
+    },
+    {
+      "_id": "c2",
+      "userId": "u-music",
+      "videoId": "v1",
+      "desc": "The soundtrack is so good.",
+      "createdAt": "2026-10-27T19:25:02.296Z"
+    },
+    {
+      "_id": "c3",
+      "userId": "u-code",
+      "videoId": "v6",
+      "desc": "Sintel gets me every time.",
+      "createdAt": "2026-10-23T19:25:02.296Z"
+    }
+  ],
+  "categories": [
+    "Animation",
+    "Education",
+    "Entertainment",
+    "Gaming",
+    "Music",
+    "News",
+    "Sports",
+    "Tech",
+    "Travel",
+    "Other"
+  ],
+  "viewEvents": [
+    {
+      "videoId": "v1",
+      "at": "2026-10-29T10:17:58.398Z"
+    },
+    {
+      "videoId": "121f84d8-e902-4e0b-a259-3d9e40445b23",
+      "at": "2026-10-29T10:31:58.756Z"
+    },
+    {
+      "videoId": "121f84d8-e902-4e0b-a259-3d9e40445b23",
+      "at": "2026-10-29T10:37:58.126Z"
+    },
+    {
+      "videoId": "1ab2fed6-d6fe-496d-a132-a23ff97d5f39",
+      "at": "2026-11-02T14:54:20.017Z"
+    }
+  ],
+  "reports": [],
+  "audit": [
+    {
+      "_id": "31c1d9e4-fffe-46ab-8b48-065e3b5721de",
+      "at": "2026-11-02T14:54:06.719Z",
+      "adminId": "6efff575-0318-4a3e-a4ab-dca222fb3fe3",
+      "adminName": "samuel",
+      "action": "video.upload",
+      "target": "1ab2fed6-d6fe-496d-a132-a23ff97d5f39",
+      "detail": "will be okay (published)"
+    },
+    {
+      "_id": "a9f63711-5e20-488c-9ddb-0700425b3640",
+      "at": "2026-10-29T10:56:14.611Z",
+      "adminId": "6efff575-0318-4a3e-a4ab-dca222fb3fe3",
+      "adminName": "samuel",
+      "action": "profile.update",
+      "target": "6efff575-0318-4a3e-a4ab-dca222fb3fe3",
+      "detail": ""
+    },
+    {
+      "_id": "dff93dd7-5219-4b23-b397-760325d7363e",
+      "at": "2026-10-29T10:31:37.081Z",
+      "adminId": "6efff575-0318-4a3e-a4ab-dca222fb3fe3",
+      "adminName": "samuel",
+      "action": "video.upload",
+      "target": "121f84d8-e902-4e0b-a259-3d9e40445b23",
+      "detail": "spiderman (published)"
+    }
+  ],
+  "settings": {
+    "siteName": "MyTube",
+    "allowUserUploads": true,
+    "requireApproval": false
+  }
+}
